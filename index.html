@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+     
+
+</head>
+<body>
+    <div class="full">
+        <h1 class="name">Money Manager</h1>
+         <div class="dashboard"> 
+          <div class="card-balance">
+           
+            <h3>Balance</h3>
+           
+          </div>
+            <div class="card-income">
+            <h3>Total Income</h3>
+          
+          </div>
+            <div class="card-expense">
+            <h3>Total Expense</h3>
+         
+          </div>
+            <div class="card-savings">
+            <h3>Saving</h3>
+           
+          </div>
+         </div>
+        
+
+     
+        <div class="transaction">
+            <h1 class="new-transaction">Add New Transaction</h1>
+              <form id="transactionForm">
+  <label >Title:</label>
+  <input type="text"  name="Title" required>
+   <label > Amount:</label>
+  <input type="text"  name="Amount" required>
+   <label >Category:</label>
+ 
+  <select name="Category" required>
+    <option value="Food">Food</option>
+    <option value="Travel">Travel</option>
+    <option value="Hobby">Hobby</option>
+    <option value="Bills">Bills</option>
+    <option value="Shopping">Shopping</option>
+
+  </select>
+  <label >Type:</label>
+  <select name="Type" required >
+    <option value="Expense">Expense</option>
+    <option value="Savings">Savings</option>
+    <option value="Income">Income</option>
+  </select>
+   <label >Date:</label>
+  <input type="date"  name="Date" required>
+   <button class="Add">Add</button>
+
+</form>
+        </div>
+      
+     
+    </div>
+
+    <div class="recent-transaction">
+      <form class="searchbar">
+      <input type="search" placeholder="Search...">
+      <button  class= "search-button " type="submit">search</button>
+    </form>
+         <h1> Recent Transaction</h1>  
+         <div class="sort">
+          <table class="table">
+            <tr class="row">
+              <td>Date</td>
+              <td>Title</td>
+                <td>Category</td>
+                <td>Type</td>
+                <td>Amount</td>
+                <td>Action</td>
+                
+            </tr>
+            
+
+            <tbody  id="transactionList">
+
+            </tbody>
+          </table>
+         </div>
+
+        
+    </div>
+        </div>
+        
+    <script src="script.js">
+        
+    </script>
+
+</body>
+</html>
